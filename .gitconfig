@@ -1,0 +1,39 @@
+[user]
+	email = <email>
+	name = <name>
+
+[credential]
+	helper = cache --timeout=86400
+
+[branch]
+	autosetuprebase = always
+
+[push]
+	default = current
+
+[core]
+	autocrlf = input
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+    status = auto
+
+[alias]
+	d = diff --word-diff
+	co = checkout
+	st = status -sb
+	lol = log --oneline --decorate --graph
+	br = branch
+	branches = branch
+	who = shortlog -s --
+	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+	stage = add --patch
+	clear = reset --hard
+	changes = log --oneline --decorate --graph @{1}..
+	merges = log --oneline --merges
+    where = describe --tags
+
+[diff]
+	tool = vimdiff
