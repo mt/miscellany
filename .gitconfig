@@ -19,6 +19,8 @@
 	diff = auto
 	interactive = auto
     status = auto
+    interactive = auto
+    ui = auto
 
 [alias]
 	d = diff --word-diff
