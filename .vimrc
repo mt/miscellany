@@ -20,7 +20,6 @@ set encoding=utf8
 set linebreak " Don't break lines in the middle of a word
 set nowrap
 set tabstop=4 shiftwidth=4 " tabs are 4 spaces, same for auto indent
-set showmode
 
 set expandtab smarttab "save tabs as spaces
 set ruler showmatch showmode
