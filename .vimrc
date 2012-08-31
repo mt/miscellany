@@ -29,6 +29,9 @@ set smartcase "ignore case if search pattern is all lowercase
 
 set listchars=trail:◌,eol:¬
 
+" map *.md to markdown instead of modula2
+au BufRead,BufNewFile *.md set filetype=markdown
+
 " -- Gui options --------------------------------------------------------------
 
 if &t_Co >= 256 || has("gui_running")
