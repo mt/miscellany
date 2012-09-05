@@ -1,41 +1,51 @@
 [user]
-	email = <email>
-	name = <name>
+    email = <email>
+    name = <name>
 
 [credential]
-	helper = cache --timeout=86400
+    helper = cache --timeout=86400
 
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 
 [push]
-	default = current
+    default = current
 
 [core]
-	autocrlf = input
+    autocrlf = input
 
 [color]
-	branch = auto
-	diff = auto
-	interactive = auto
+    branch = auto
+    diff = auto
+    interactive = auto
     status = auto
     interactive = auto
     ui = auto
 
 [alias]
-	d = diff --word-diff
-	co = checkout
-	st = status -sb
-	lol = log --oneline --decorate --graph
-	br = branch
-	branches = branch
-	who = shortlog -s --
-	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
-	stage = add --patch
-	clear = reset --hard
-	changes = log --oneline --decorate --graph @{1}..
-	merges = log --oneline --merges
-    where = describe --tags
+    d = diff --word-diff
+    dc = diff --cached --word-diff
+    co = checkout
+    st = status -sb
+    cp = cherry-pick -x 
+    b = branch -v
+    r = remote -v
+    t = tag -l
+    branches = branch
+    unstage = reset HEAD
+    uncommit = reset --soft HEAD^
+    lol = log --oneline --decorate --graph
+    #who = shortlog -s --
+    #whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+    #stage = add --patch
+    #clear = reset --hard
+    #changes = log --oneline --decorate --graph @{1}..
+    #merges = log --oneline --merges
+    #where = describe --tags
 
 [diff]
-	tool = vimdiff
+    tool = vimdiff
+[gc]
+    auto = 1
+[merge]
+    summary=true
