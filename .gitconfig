@@ -19,7 +19,6 @@
     diff = auto
     interactive = auto
     status = auto
-    interactive = auto
     ui = auto
 
 [alias]
