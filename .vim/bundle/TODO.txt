@@ -1,0 +1,3 @@
+https://github.com/msanders/snipmate.vim
+https://github.com/scrooloose/nerdtree
+
