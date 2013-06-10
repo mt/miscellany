@@ -34,6 +34,9 @@
     unstage = reset HEAD
     uncommit = reset --soft HEAD^
     lol = log --oneline --decorate --graph
+    assume   = update-index --assume-unchanged
+    unassume = update-index --no-assume-unchanged
+    assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
     #who = shortlog -s --
     #whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
     #stage = add --patch
