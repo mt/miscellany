@@ -10,6 +10,3 @@
 [submodule ".vim/bundle/vim-clojure-static"]
 	path = .vim/bundle/vim-clojure-static
 	url = git://github.com/guns/vim-clojure-static.git
-[submodule ".vim/bundle/snipmate.vim"]
-	path = .vim/bundle/snipmate.vim
-	url = git://github.com/msanders/snipmate.vim.git
