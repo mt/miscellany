@@ -6,7 +6,7 @@ set nobackup "don't create backup files
 
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
-call pathogen#infect()
+execute pathogen#infect()
 filetype plugin indent on
 
 " change the mapleader from \ to ,
